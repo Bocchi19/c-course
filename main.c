@@ -21,7 +21,7 @@ int main () {
     printf ("\nMode selected: %hhu", option);
 
     if (option == 1){
-        uint32_t firstNumber, secondNumber;
+        uint32_t first_number, second_number;
         printf ("");
     }
     else if (option == 2){
@@ -41,6 +41,10 @@ int main () {
                 break;
         }
         printf ("\nGCD(%u, %u) = %u", first_number, second_number, gcd);
+    }
+    else if (option == 3) {
+        printf ("/nExit program!");
+        exit(0);
     }
     return 0;
 }
